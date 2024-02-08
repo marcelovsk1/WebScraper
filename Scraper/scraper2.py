@@ -44,17 +44,18 @@ def scrape_events(driver, url, selectors):
 
         # Modifique esta parte de acordo com a estrutura específica da página do evento
         # Exemplo: extrair informações do título, data, local e descrição
-        title = event_page.find('h1', class_='event-title css-0').text.strip()
-        description = event_page.find('', class_='').text.strip()
-        date = event_page.find('div', class_='event-details__date').text.strip()
-        location = event_page.find('div', class_='event-details__data').text.strip()
-        description = event_page.find('div', class_='structured-content-rich-text').text.strip()
+        title = event_page.find('h1', class_='event-title css-0').text.strip() if event_page.find('h1', class_='event-title css-0') else None
+        description = event_page.find('p', class_='summary').text.strip() if event_page.find('p', class_='summary') else None
+        price = event_page.find('div', class_='conversion-bar__panel-info').text.strip() if event_page.find('div', class_='conversion-bar__panel-info') else None
+        date = event_page.find('span', class_='date-info__full-datetime').text.strip() if event_page.find('span', class_='date-info__full-datetime') else None
+        location = event_page.find('p', class_='location-info__address-text').text.strip() if event_page.find('p', class_='location-info__address-text') else None
 
         # Adicionar as informações detalhadas ao dicionário de informações do evento
         event_info['Title'] = title
+        event_info['Description'] = description
+        event_info['Price'] = price
         event_info['Date'] = date
         event_info['Location'] = location
-        event_info['Description'] = description
 
         event_list.append(event_info)
 
@@ -70,7 +71,6 @@ def main():
             'url': 'https://www.eventbrite.com/d/canada--montreal/all-events/',
             'selectors': {
                 'event': {'tag': 'div', 'class': 'discover-search-desktop-card discover-search-desktop-card--hiddeable'},
-                'Event': {'tag': 'h2', 'class': 'Typography_root__487rx #3a3247 Typography_body-lg__487rx event-card__clamp-line--two Typography_align-match-parent__487rx'},
                 'Date': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Location': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Price': {'tag': 'p', 'class': 'Typography_root__487rx #3a3247 Typography_body-md-bold__487rx Typography_align-match-parent__487rx'},
