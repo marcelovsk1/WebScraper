@@ -57,6 +57,7 @@ def scrape_events(driver, url, selectors):
         event_info['Date'] = date
         event_info['Location'] = location
 
+        # Adicionar o evento à lista de eventos
         event_list.append(event_info)
 
         # Navegar de volta para a página inicial de eventos para continuar a raspagem
@@ -71,6 +72,8 @@ def main():
             'url': 'https://www.eventbrite.com/d/canada--montreal/all-events/',
             'selectors': {
                 'event': {'tag': 'div', 'class': 'discover-search-desktop-card discover-search-desktop-card--hiddeable'},
+                'Title': {'tag': 'h1', 'class': 'event-title css-0'},
+                'Description': {'tag': 'p', 'class': 'summary'},
                 'Date': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Location': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Price': {'tag': 'p', 'class': 'Typography_root__487rx #3a3247 Typography_body-md-bold__487rx Typography_align-match-parent__487rx'},
