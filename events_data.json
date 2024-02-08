@@ -3,164 +3,264 @@
     "source_name": "Eventbrite",
     "events": [
       {
+        "Title": "R\u00e9volution ESG : opportunit\u00e9s, risques et responsabilit\u00e9",
+        "Description": "Soyez des n\u00f4tres le 14 f\u00e9vrier 2024 pour la conf\u00e9rence inaugurale de l\u2019initiative Measuring Beyond r\u00e9unissant des expertes et experts ESG.",
+        "Date": "mer. 14 f\u00e9vr. 2024 08:30 - 12:30 EST",
+        "Location": "HEC Montr\u00e9al",
+        "Price": "287,45\u00a0$",
+        "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F657996979%2F1628313863293%2F1%2Foriginal.20231213-144016?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=15e811a82070d0db61b304f5374b4387",
+        "Tags": [
+          "\u00c9v\u00e9nements \u00e0 Canada"
+        ],
+        "Organizer": "\u00c9cole des dirigeants HEC Montr\u00e9al",
+        "Image URL Organizer": null
+      },
+      {
         "Title": "Global Tarraxo Festival - Montreal 3rd Edition",
+        "Description": "Global Tarraxo and Lavish Productions are more than happy to announce the 3rd edition of Global Tarraxo Festival\u203c\ufe0f",
         "Date": "February 9 \u00b7 2pm - February 12 \u00b7 3am EST",
         "Location": "H\u00f4tel Z\u00e9ro1",
         "Price": "From CA$27.96",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F684946779%2F234633946482%2F1%2Foriginal.20240129-161053?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=77%2C0%2C1492%2C746&s=b831f6da4b76e8aa9528eb52b7c11843",
-        "Description": "Global Tarraxo and Lavish Productions are more than happy to announce the 3rd edition of Global Tarraxo Festival\u203c\ufe0f"
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "2024 ONF LIVE IN CANADA *MONTREAL",
+        "Description": "2024 ONF LIVE IN CANADA [Be Here Now in Canada]\nONF is bringing their electrifying energy to Canada with their highly-anticipated tour!",
         "Date": "Sun, Mar 3, 2024 7:00 PM - 10:00 PM EST",
         "Location": "Rialto Theatre",
         "Price": "From $58.86",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F658057899%2F1052235979703%2F1%2Foriginal.20231213-161105?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=fdef60e19e38209664c4c0d092f25d06",
-        "Description": "2024 ONF LIVE IN CANADA [Be Here Now in Canada]\nONF is bringing their electrifying energy to Canada with their highly-anticipated tour!"
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "Concert NES/SNES",
-        "Date": "sam. 10 f\u00e9vr. 2024 19:30 - 22:00 EST. Doors at 6pm",
+        "Description": "Concert NES/SNES",
+        "Date": "sam. 10 f\u00e9vr. 2024 19:30 - 22:00 EST. Ouverture des portes \u00e06pm",
         "Location": "Salle Marguerite-Bourgeoys",
         "Price": "23\u00a0$ \u2013 40\u00a0$",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F570915309%2F300041748392%2F1%2Foriginal.20230808-124420?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C15%2C1200%2C600&s=c98f562f7c9fd7d9c3cd996145535cef",
-        "Description": "Concert NES/SNES"
+        "Tags": [
+          "\u00c9v\u00e9nements \u00e0 Canada"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "Protecting Human Rights in AI: Integration in Risk-Based Governance",
+        "Description": "This international conference aims at advancing the conversation on integrating human rights in risk-based approaches to AI governance.",
         "Date": "Starts on Wed, Feb 14, 2024 5:00 PM EST",
         "Location": "Mila - Institut qu\u00e9b\u00e9cois d'intelligence artificielle",
         "Price": "$262.50",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F649209729%2F1373604421203%2F1%2Foriginal.20231128-011331?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C4500%2C2250&s=f0e576f52f2bdd32aa4138baa9213ee3",
-        "Description": "This international conference aims at advancing the conversation on integrating human rights in risk-based approaches to AI governance."
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": "Mila - Quebec AI Institute",
+        "Image URL Organizer": null
       },
       {
         "Title": "Gala Proprias - 23 f\u00e9vrier 2024",
-        "Date": "Starts on ven., 23 f\u00e9vr. 2024 15:00 EST",
+        "Description": "Gala Proprias - 23 f\u00e9vrier 2024",
+        "Date": "D\u00e9bute le ven., 23 f\u00e9vr. 2024 15:00 EST",
         "Location": "Sheraton Laval",
         "Price": "0\u00a0$ \u2013 188\u00a0$",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F675741359%2F184468621219%2F1%2Foriginal.20240116-172555?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=9d3515e7a42fc2772657209a85bc5e08",
-        "Description": "Gala Proprias - 23 f\u00e9vrier 2024"
+        "Tags": [
+          "\u00c9v\u00e9nements \u00e0 Canada"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "The Love Lounge",
+        "Description": "Join us as we throw the biggest Valentine party in Montreal ! Get your tickets quick before they are all SOLD OUT !",
         "Date": "February 17 \u00b7 10pm - February 18 \u00b7 3am EST",
         "Location": "TBA (To Be Announced)",
         "Price": "From CA$33.28",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F681429719%2F1482256116143%2F1%2Foriginal.20240124-052654?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=1%2C570%2C1544%2C772&s=a2759d39dd22123ca3b9d91c2526c84a",
-        "Description": "Join us as we throw the biggest Valentine party in Montreal ! Get your tickets quick before they are all SOLD OUT !"
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": "Way to Party",
+        "Image URL Organizer": null
       },
       {
         "Title": "CARNAVRAAU 2024 Ed. XOXO [black cat] - Feb, 23 - Montreal, QC",
+        "Description": "Dia 23 de fevereiro, vai rolar a segunda edi\u00e7\u00e3o da CARNAVRAAU, uma das nossas festas de maior sucesso.",
         "Date": "Fri, Feb 23, 2024 10:00 PM - Sat, Feb 24, 2024 3:00 AM EST",
         "Location": "Cabaret Berlin",
         "Price": "From $19.04",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F665549249%2F1333145779403%2F1%2Foriginal.20240101-155441?w=400&auto=format%2Ccompress&q=75&sharp=10&s=591beaf056c29eccdad42dfc18f9f419",
-        "Description": "Dia 23 de fevereiro, vai rolar a segunda edi\u00e7\u00e3o da CARNAVRAAU, uma das nossas festas de maior sucesso."
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": "Blk Cat [black cat]",
+        "Image URL Organizer": null
       },
       {
         "Title": "ELEV8 - LA CONF\u00c9RENCE ULTIME DES COURTIERS EN 2024",
+        "Description": "UN RASSEMBLEMENT UNIQUE POUR CEUX QUI ASPIRENT \u00c0 L\u2019EXCELLENCE.",
         "Date": "Thu, Feb 15, 2024 7:00 AM - 10:00 PM EST",
         "Location": "Montreal Convention Centre",
         "Price": "From $282.57",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F658751169%2F1804283135643%2F1%2Foriginal.20231214-173709?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C52%2C1640%2C820&s=4123dfba01be62d5fb803447d60d4d1c",
-        "Description": "UN RASSEMBLEMENT UNIQUE POUR CEUX QUI ASPIRENT \u00c0 L\u2019EXCELLENCE."
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "Westmount 150: Premier \u00e9v\u00e9nement officiel | First Official Event",
+        "Description": "Musique, cocktails, bouch\u00e9es et surprises | Music, cocktails, appetizers and surprises.",
         "Date": "Thu, Feb 22, 2024 6:30 PM - 9:00 PM EST",
         "Location": "Victoria Hall Community Centre",
         "Price": null,
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F680846459%2F153553654757%2F1%2Foriginal.20240123-162925?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C9000%2C4500&s=493d54e08d7c5d0f54b66f1023ca3186",
-        "Description": "Musique, cocktails, bouch\u00e9es et surprises | Music, cocktails, appetizers and surprises."
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "Fiert\u00e9 des neiges / Winter Pride 2024",
+        "Description": "Fiert\u00e9 des neiges perp\u00e9tue la tradition annuelle de rassembler le r\u00e9seau Fiert\u00e9 au travail Canada \u00e0 Montr\u00e9al.",
         "Date": "mer. 21 f\u00e9vr. 2024 16:00 - 20:30 EST",
         "Location": "Square BDC",
         "Price": "\u00c0 partir de 0\u00a0$",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F681030739%2F92706872045%2F1%2Foriginal.20240123-193124?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C70%2C2250%2C1125&s=37ca553bc63bca7f47211c7e6fa44dea",
-        "Description": "Fiert\u00e9 des neiges perp\u00e9tue la tradition annuelle de rassembler le r\u00e9seau Fiert\u00e9 au travail Canada \u00e0 Montr\u00e9al."
+        "Tags": [
+          "\u00c9v\u00e9nements \u00e0 Canada"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "Ru : r\u00e9silience, int\u00e9gration et amour au-del\u00e0 des fronti\u00e8res",
-        "Date": "Starts on mar., 27 f\u00e9vr. 2024 18:00 EST",
+        "Description": "Projection du film Ru suivie d\u2019une discussion avec Kim Th\u00fay, le r\u00e9alisateur Charles-Olivier Michaud et Marie-Jeanne Blain, anthropologue.",
+        "Date": "D\u00e9bute le mar., 27 f\u00e9vr. 2024 18:00 EST",
         "Location": "Th\u00e9\u00e2tre Outremont",
         "Price": "10\u00a0$",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F685249029%2F164894113146%2F1%2Foriginal.20240129-210401?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=b35f95206d6ac4141e684cd1490b9251",
-        "Description": "Projection du film Ru suivie d\u2019une discussion avec Kim Th\u00fay, le r\u00e9alisateur Charles-Olivier Michaud et Marie-Jeanne Blain, anthropologue."
+        "Tags": [
+          "\u00c9v\u00e9nements \u00e0 Canada"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "#LinkedInLocalMontr\u00e9al - 42\u00e8me \u00c9dition | 42nd Edition",
+        "Description": "42\u00e8me \u00c9dition \u2014 #LinkedInLocalMTL #LinkedInLocalMontr\u00e9al  #LinkedInLocal \u2014 42nd Edition",
         "Date": "mer. 21 f\u00e9vr. 2024 18:00 - 20:30 EST",
         "Location": "@Workbase",
         "Price": "\u00c0 partir de 21,99\u00a0$",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F678982379%2F283067372725%2F1%2Foriginal.20240120-200023?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C195%2C2048%2C1024&s=582704d9cf682b579ca0f49b190a3b46",
-        "Description": "42\u00e8me \u00c9dition \u2014 #LinkedInLocalMTL #LinkedInLocalMontr\u00e9al  #LinkedInLocal \u2014 42nd Edition"
+        "Tags": [
+          "\u00c9v\u00e9nements \u00e0 Canada"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "Roller Disco 100% Love",
+        "Description": "Fall in Love with Roller Disco all over again \u2764  / Retomber Amoureux de Roller Disco \u2764",
         "Date": "Sat, Feb 17, 2024 9:30 PM - 11:30 PM EST",
         "Location": "Roller Disco Montreal",
         "Price": null,
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F681349399%2F464123046383%2F1%2Foriginal.20240124-021258?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C100%2C1080%2C540&s=8599136e6f304b8d04ca022e6f2398eb",
-        "Description": "Fall in Love with Roller Disco all over again \u2764  / Retomber Amoureux de Roller Disco \u2764"
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": "FA extravanganza",
+        "Description": "WELCOME TO FLIGHT MF1602 WITH SERVICE TO YUL",
         "Date": "ven. 16 f\u00e9vr. 2024 20:00 - sam. 17 f\u00e9vr. 2024 03:00 EST",
         "Location": "998 Rue Notre-Dame, Lachine, QC, Canada",
         "Price": "\u00c0 partir de 38,61\u00a0$",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F662148329%2F1744965115883%2F1%2Foriginal.20231221-173406?w=400&auto=format%2Ccompress&q=75&sharp=10&s=169edfd4746757e68883063c04eaf14f",
-        "Description": "WELCOME TO FLIGHT MF1602 WITH SERVICE TO YUL"
+        "Tags": [
+          "\u00c9v\u00e9nements \u00e0 Canada"
+        ],
+        "Organizer": "MAISON FLORENCA",
+        "Image URL Organizer": null
       },
       {
         "Title": "A Very Comedy Nest Valentine's Day - Wednesday February 14th, 2024",
+        "Description": "Catch 9 comedians in 90 minutes from Just For Laughs, Comedy Central, CTV Comedy Channel and more finding the funny in all corners of life!",
         "Date": "Wednesday, February 14 \u00b7 8 - 9:30pm EST",
         "Location": "The  Comedy Nest",
         "Price": "CA$17.26",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F450952319%2F90858285893%2F1%2Foriginal.20221219-172007?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C4268%2C2134&s=99642131fd86676d5ab6474a3e258b3c",
-        "Description": "Catch 9 comedians in 90 minutes from Just For Laughs, Comedy Central, CTV Comedy Channel and more finding the funny in all corners of life!"
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
+      },
+      {
+        "Title": "West Island Speed Dating/Ages 25-35",
+        "Description": "Get ready to mingle and meet your potential match at TrueVibes Speed Dating, where sparks will fly and connections will be made.",
+        "Date": "Thu, Feb 8, 2024 7:00 PM - 9:00 PM EST",
+        "Location": "\u00d4RA Cafe & Cocktail, Chemin du Bord-du-Lac-Lakeshore, Dorval, QC, Canada",
+        "Price": "$33.28",
+        "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F669282309%2F1950209489433%2F1%2Foriginal.20240107-182029?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C264%2C1080%2C540&s=5e714523bc3374d618981976e04cc93c",
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": "TrueVibes",
+        "Image URL Organizer": null
+      },
+      {
+        "Title": "BUILD HER FAITH'S LIVE PODCAST EVENT",
+        "Description": "Live podcast recording that allows an in person audience to be present and engage with the hosts of the show. Created for christian women.",
+        "Date": "Starts on Thu, Feb 8, 2024 6:30 PM EST",
+        "Location": "NEW LOCATION: SMARTLOFT",
+        "Price": "$27.96",
+        "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F681664309%2F1976566324773%2F1%2Foriginal.20240124-144142?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C156%2C4920%2C2460&s=892d5213c2a73c746cdd8655456212c0",
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": "Build HER Faith",
+        "Image URL Organizer": null
       },
       {
         "Title": "MOVING BEYOND SEASON 4 PRESENTS: UNLOCKED",
+        "Description": "A dedication to our teachers - the guiding forces who shape us into the individuals we are and unlock the depths of our mind, body and soul.",
         "Date": "Fri, Feb 9, 2024 6:00 PM - Sat, Feb 10, 2024 10:00 PM EST",
         "Location": "Studio Rush",
         "Price": "$40.24",
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F673415789%2F552774522993%2F1%2Foriginal.20240112-175546?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C275%2C1100%2C550&s=f4c76e11fe45a8d0b78f59f6f3b49450",
-        "Description": "A dedication to our teachers - the guiding forces who shape us into the individuals we are and unlock the depths of our mind, body and soul."
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       },
       {
         "Title": null,
+        "Description": "SCA Canada is proud to present the Canadian National Barista Championships, hosted by Origine 117, Cafe St-Henri, and Apex Coffee Imports!",
         "Date": null,
         "Location": "Origine117",
         "Price": null,
         "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F662151839%2F148027879209%2F1%2Foriginal.20231221-174002?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C91%2C1000%2C500&s=c4ab68dfda526635b09ec513fc9cc83c",
-        "Description": "SCA Canada is proud to present the Canadian National Barista Championships, hosted by Origine 117, Cafe St-Henri, and Apex Coffee Imports!"
-      },
-      {
-        "Title": "Variations Goldberg",
-        "Date": "Starts on jeu., 8 f\u00e9vr. 2024 19:30 EST",
-        "Location": "Notre-Dame-de-Bon-Secours Chapel",
-        "Price": "\u00c0 partir de 12,58\u00a0$",
-        "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F634511069%2F164278276254%2F1%2Foriginal.20231103-152057?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=a2972875ba754b3cd95bd359fef830bf",
-        "Description": "Venez entendre le chef d'oeuvre de Bach, les \"Variations Goldberg\", dans le sublime atmosph\u00e8re de la Chapelle-Notre-Dame-du-Bonsecours."
-      },
-      {
-        "Title": "Taylor's Valentine Dance Party",
-        "Date": "Fri, Feb 16, 2024 11:00 PM - Sat, Feb 17, 2024 3:00 AM EST",
-        "Location": "Turbo Ha\u00fcs",
-        "Price": "From $17.50",
-        "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F681276859%2F1618805386633%2F1%2Foriginal.20240124-000537?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C26%2C1920%2C960&s=fd1aa3c8aa6c1cf967e1002a83d11b1e",
-        "Description": "Glimmering Dolls presents a Taylor Swift X Valentine's Day dance party"
-      },
-      {
-        "Title": "Refresh \u00c9nerg\u00e9tique: C\u00e9r\u00e9monie de Cacao",
-        "Date": "Sun, Feb 18, 2024 3:00 PM - 4:30 PM EST",
-        "Location": "Studio Sage | Yoga, Pilates & M\u00e9ditation",
-        "Price": "$75",
-        "Image URL": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F681565969%2F97797267115%2F1%2Foriginal.20240124-115154?w=400&auto=format%2Ccompress&q=75&sharp=10&s=0d60c824d8b843d8183616966d598bfd",
-        "Description": "The full 5 senses experience - Exp\u00e9rience Multi-Sensorielle\nFALL IN LOVE WITH U"
+        "Tags": [
+          "Canada Events"
+        ],
+        "Organizer": null,
+        "Image URL Organizer": null
       }
     ]
   }

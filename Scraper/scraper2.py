@@ -11,7 +11,7 @@ def scroll_to_bottom(driver, max_clicks=3):
         time.sleep(3)
 
 # Função para raspar os eventos
-def scrape_events(driver, url, selectors, max_pages=5):
+def scrape_events(driver, url, selectors, max_pages=1):
     driver.get(url)
     driver.implicitly_wait(30)
 
@@ -41,17 +41,18 @@ def scrape_events(driver, url, selectors, max_pages=5):
             # Aguarde até que a página detalhada seja carregada completamente
             time.sleep(3)
 
-            # Raspe informações detalhadas da página do evento
             event_page_content = driver.page_source
             event_page = BeautifulSoup(event_page_content, 'html.parser')
 
-            # Modifique esta parte de acordo com a estrutura específica da página do evento
-            # Exemplo: extrair informações do título, data, local e descrição
             title = event_page.find('h1', class_='event-title css-0').text.strip() if event_page.find('h1', class_='event-title css-0') else None
             description = event_page.find('p', class_='summary').text.strip() if event_page.find('p', class_='summary') else None
             price = event_page.find('div', class_='conversion-bar__panel-info').text.strip() if event_page.find('div', class_='conversion-bar__panel-info') else None
             date = event_page.find('span', class_='date-info__full-datetime').text.strip() if event_page.find('span', class_='date-info__full-datetime') else None
             location = event_page.find('p', class_='location-info__address-text').text.strip() if event_page.find('p', class_='location-info__address-text') else None
+            tags_container = event_page.find('ul', class_='tags-item inline')  # Altere para a classe correta da sua ul
+            tags = [tag.text.strip() for tag in tags_container.find_all('a')] if tags_container else None
+            organizer = event_page.find('a', class_='descriptive-organizer-info__name-link') if event_page.find('a', class_='descriptive-organizer-info__name-link') else None
+            image_url_organizer = event_page.find('svg', class_='eds-avatar__background eds-avatar__background--has-border') if event_page.find('svg', class_='eds-avatar__background eds-avatar__background--has-border') else None
 
             # Adicionar as informações detalhadas ao dicionário de informações do evento
             event_info['Title'] = title
@@ -59,6 +60,9 @@ def scrape_events(driver, url, selectors, max_pages=5):
             event_info['Price'] = price
             event_info['Date'] = date
             event_info['Location'] = location
+            event_info['Tags'] = tags
+            event_info['Organizer'] = organizer.text.strip() if organizer else None
+            event_info['Image URL Organizer'] = image_url_organizer.get('xlink:href') if image_url_organizer else None  # Alteração aqui
 
             # Adicionar o evento à lista de eventos
             event_list.append(event_info)
@@ -85,12 +89,15 @@ def main():
             'url': 'https://www.eventbrite.com/d/canada--montreal/all-events/',
             'selectors': {
                 'event': {'tag': 'div', 'class': 'discover-search-desktop-card discover-search-desktop-card--hiddeable'},
-
                 'Title': {'tag': 'h2', 'class': 'Typography_root__487rx #3a3247 Typography_body-lg__487rx event-card__clamp-line--two Typography_align-match-parent__487rx'},
+                'Description': {'tag': 'p', 'class': 'summary'},
                 'Date': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Location': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Price': {'tag': 'p', 'class': 'Typography_root__487rx #3a3247 Typography_body-md-bold__487rx Typography_align-match-parent__487rx'},
-                'Image URL': {'tag': 'img', 'class': 'event-card-image'}
+                'Image URL': {'tag': 'img', 'class': 'event-card-image'},
+                'Tags': {'tag': 'ul', 'class': 'your-ul-class-here'},
+                'Organizer': {'tag': 'a', 'class': 'descriptive-organizer-info__name-link'},
+                'Image URL Organizer': {'tag': 'svg', 'class': 'eds-avatar__background eds-avatar__background--has-border'},
             },
         }
     ]
