@@ -11,59 +11,72 @@ def scroll_to_bottom(driver, max_clicks=3):
         time.sleep(3)
 
 # Função para raspar os eventos
-def scrape_events(driver, url, selectors):
+def scrape_events(driver, url, selectors, max_pages=5):
     driver.get(url)
     driver.implicitly_wait(30)
-    scroll_to_bottom(driver)
 
-    page_content = driver.page_source
-    webpage = BeautifulSoup(page_content, 'html.parser')
+    all_events = []
 
-    events = webpage.find_all(selectors['event']['tag'], class_=selectors['event'].get('class'))
-    event_list = []
+    for _ in range(max_pages):
+        # Coletar links dos eventos na página atual
+        page_content = driver.page_source
+        webpage = BeautifulSoup(page_content, 'html.parser')
+        events = webpage.find_all(selectors['event']['tag'], class_=selectors['event'].get('class'))
 
-    for event in events:
-        event_info = {}
-        for key, selector in selectors.items():
-            if key != 'event':
-                element = event.find(selector['tag'], class_=selector.get('class'))
-                event_info[key] = element.text.strip() if element else None
-                if key == 'Image URL':
-                    event_info[key] = element['src'] if element and 'src' in element.attrs else None
+        event_list = []
 
-        # Clique no link do evento para acessar a página detalhada
-        event_link = event.find('a', href=True)['href']
-        driver.get(event_link)
+        for event in events:
+            event_info = {}
+            for key, selector in selectors.items():
+                if key != 'event':
+                    element = event.find(selector['tag'], class_=selector.get('class'))
+                    event_info[key] = element.text.strip() if element else None
+                    if key == 'Image URL':
+                        event_info[key] = element['src'] if element and 'src' in element.attrs else None
 
-        # Aguarde até que a página detalhada seja carregada completamente
-        time.sleep(3)
+            # Clique no link do evento para acessar a página detalhada
+            event_link = event.find('a', href=True)['href']
+            driver.get(event_link)
 
-        # Raspe informações detalhadas da página do evento
-        event_page_content = driver.page_source
-        event_page = BeautifulSoup(event_page_content, 'html.parser')
+            # Aguarde até que a página detalhada seja carregada completamente
+            time.sleep(3)
 
-        # Modifique esta parte de acordo com a estrutura específica da página do evento
-        # Exemplo: extrair informações do título, data, local e descrição
-        title = event_page.find('h1', class_='event-title css-0').text.strip() if event_page.find('h1', class_='event-title css-0') else None
-        description = event_page.find('p', class_='summary').text.strip() if event_page.find('p', class_='summary') else None
-        price = event_page.find('div', class_='conversion-bar__panel-info').text.strip() if event_page.find('div', class_='conversion-bar__panel-info') else None
-        date = event_page.find('span', class_='date-info__full-datetime').text.strip() if event_page.find('span', class_='date-info__full-datetime') else None
-        location = event_page.find('p', class_='location-info__address-text').text.strip() if event_page.find('p', class_='location-info__address-text') else None
+            # Raspe informações detalhadas da página do evento
+            event_page_content = driver.page_source
+            event_page = BeautifulSoup(event_page_content, 'html.parser')
 
-        # Adicionar as informações detalhadas ao dicionário de informações do evento
-        event_info['Title'] = title
-        event_info['Description'] = description
-        event_info['Price'] = price
-        event_info['Date'] = date
-        event_info['Location'] = location
+            # Modifique esta parte de acordo com a estrutura específica da página do evento
+            # Exemplo: extrair informações do título, data, local e descrição
+            title = event_page.find('h1', class_='event-title css-0').text.strip() if event_page.find('h1', class_='event-title css-0') else None
+            description = event_page.find('p', class_='summary').text.strip() if event_page.find('p', class_='summary') else None
+            price = event_page.find('div', class_='conversion-bar__panel-info').text.strip() if event_page.find('div', class_='conversion-bar__panel-info') else None
+            date = event_page.find('span', class_='date-info__full-datetime').text.strip() if event_page.find('span', class_='date-info__full-datetime') else None
+            location = event_page.find('p', class_='location-info__address-text').text.strip() if event_page.find('p', class_='location-info__address-text') else None
 
-        # Adicionar o evento à lista de eventos
-        event_list.append(event_info)
+            # Adicionar as informações detalhadas ao dicionário de informações do evento
+            event_info['Title'] = title
+            event_info['Description'] = description
+            event_info['Price'] = price
+            event_info['Date'] = date
+            event_info['Location'] = location
 
-        # Navegar de volta para a página inicial de eventos para continuar a raspagem
-        driver.get(url)
+            # Adicionar o evento à lista de eventos
+            event_list.append(event_info)
 
-    return event_list
+            # Navegar de volta para a página inicial de eventos para continuar a raspagem
+            driver.get(url)
+
+        all_events.extend(event_list)
+
+        # Avançar para a próxima página de eventos
+        try:
+            next_button = driver.find_element_by_link_text('Next')
+            next_button.click()
+            time.sleep(3)
+        except:
+            break  # Se não houver mais botão "Next", saia do loop
+
+    return all_events
 
 def main():
     sources = [
@@ -72,8 +85,8 @@ def main():
             'url': 'https://www.eventbrite.com/d/canada--montreal/all-events/',
             'selectors': {
                 'event': {'tag': 'div', 'class': 'discover-search-desktop-card discover-search-desktop-card--hiddeable'},
-                'Title': {'tag': 'h1', 'class': 'event-title css-0'},
-                'Description': {'tag': 'p', 'class': 'summary'},
+
+                'Title': {'tag': 'h2', 'class': 'Typography_root__487rx #3a3247 Typography_body-lg__487rx event-card__clamp-line--two Typography_align-match-parent__487rx'},
                 'Date': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Location': {'tag': 'p', 'class': 'Typography_root__487rx #585163 Typography_body-md__487rx event-card__clamp-line--one Typography_align-match-parent__487rx'},
                 'Price': {'tag': 'p', 'class': 'Typography_root__487rx #3a3247 Typography_body-md-bold__487rx Typography_align-match-parent__487rx'},
@@ -88,7 +101,7 @@ def main():
         options = Options()
         options.headless = True
         driver = webdriver.Chrome(options=options)
-        events = scrape_events(driver, source['url'], source['selectors'])
+        events = scrape_events(driver, source['url'], source['selectors'], max_pages=5)
         driver.quit()
 
         source_data = {
